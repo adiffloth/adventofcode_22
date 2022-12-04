@@ -15,9 +15,10 @@ for elf_1, elf_2, elf_3 in zip(*[iter(lines)] * 3):
     priorities_2.append(ord(common) - offset)
 
 part_1 = sum(priorities_1)
-print(f'{part_1=}')
+print(f'{part_1 = }')
 assert part_1 == 8053
+
 part_2 = sum(priorities_2)
-print(f'{part_2=}')
+print(f'{part_2 = }')
 assert part_2 == 2425
 print('Tests passed.')
