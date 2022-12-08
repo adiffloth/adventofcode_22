@@ -3,7 +3,7 @@ line = open('day06/1.in').read()
 
 def solve(line, substr_len):
     for i in range(substr_len, len(line)):
-        if len(set(line[i-substr_len:i])) >= substr_len:
+        if len(set(line[i - substr_len:i])) >= substr_len:
             return i
 
 
