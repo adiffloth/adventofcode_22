@@ -26,16 +26,14 @@ def scenic_score(y, x):
 forest = [list(map(int, [*x])) for x in open('day08/1.in', encoding='UTF8').read().splitlines()]
 
 visible_cnt = len(forest) * 2 + (len(forest[0]) - 2) * 2  # Outer trees
-for j in range(1, len(forest) - 1):
-    for i in range(1, len(forest[0]) - 1):
-        visible_cnt += is_visible(j, i)
-print(f'Part 1: {visible_cnt}')
-assert visible_cnt == 1736
-
 max_scenic_score = 0
 for j in range(1, len(forest) - 1):
     for i in range(1, len(forest[0]) - 1):
+        visible_cnt += is_visible(j, i)
         max_scenic_score = max(max_scenic_score, scenic_score(j, i))
+print(f'Part 1: {visible_cnt}')
+assert visible_cnt == 1736
+
 print(f'Part 2: {max_scenic_score}')
 assert max_scenic_score == 268800
 
