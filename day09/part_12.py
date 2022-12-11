@@ -41,7 +41,7 @@ def solve(lines, knots):
     return len(tail_locs)
 
 
-lines = [x for x in open('day09/1.in').read().splitlines()]
+lines = open('day09/1.in').read().splitlines()
 d = {'U': (0, 1), 'D': (0, -1), 'L': (-1, 0), 'R': (1, 0)}
 
 part_1 = solve(lines, [(0, 0)] * 2)

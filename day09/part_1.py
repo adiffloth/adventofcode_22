@@ -18,7 +18,7 @@ def move_tail(head, tail):
     return tail
 
 
-lines = [x for x in open('day09/1.in').read().splitlines()]
+lines = open('day09/1.in').read().splitlines()
 d = {'U': (0, 1), 'D': (0, -1), 'L': (-1, 0), 'R': (1, 0)}
 head = (0, 0)
 tail = (0, 0)

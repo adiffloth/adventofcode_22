@@ -1,4 +1,4 @@
-lines = [x for x in open('day04/1.in').read().splitlines()]
+lines = open('day04/1.in').read().splitlines()
 
 part_1 = 0
 part_2 = 0

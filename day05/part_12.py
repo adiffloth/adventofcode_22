@@ -50,7 +50,7 @@ def part_2(lines, max_init_height, num_stacks):
     return get_top_crates(stacks)
 
 
-lines = [x for x in open('day05/1.in').read().splitlines()]
+lines = open('day05/1.in').read().splitlines()
 max_init_height, num_stacks = find_stack_shape(lines)
 
 part_1_ans = part_1(lines, max_init_height, num_stacks)

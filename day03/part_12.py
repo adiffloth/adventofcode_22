@@ -1,9 +1,9 @@
-lines = [x for x in open('day03/1.in').read().splitlines()]
+lines = open('day03/1.in').read().splitlines()
 
 priorities_1 = []
 for line in lines:
-    lt = line[:len(line)//2]
-    rt = line[len(line)//2:]
+    lt = line[:len(line) // 2]
+    rt = line[len(line) // 2:]
     common = set(lt).intersection(set(rt)).pop()
     offset = 96 - common.isupper() * 58
     priorities_1.append(ord(common) - offset)

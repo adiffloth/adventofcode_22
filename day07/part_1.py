@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-lines = [x for x in open('day07/1.in').read().splitlines()]
+lines = open('day07/1.in').read().splitlines()
 
 pwd = ['/']
 files = defaultdict(int)

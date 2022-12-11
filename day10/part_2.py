@@ -13,7 +13,7 @@ def tick(cycle):
     return cycle
 
 
-lines = [x for x in open('day10/1.in').read().splitlines()]
+lines = open('day10/1.in').read().splitlines()
 cycle = 0
 register = 1
 

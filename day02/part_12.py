@@ -1,4 +1,4 @@
-lines = [x for x in open('day02/1.in').read().splitlines()]
+lines = open('day02/1.in').read().splitlines()
 
 op_plays = 'ABC'
 my_plays = 'XYZ'
