@@ -1,9 +1,9 @@
 from collections import defaultdict
 
-lines = open('day07/1.in').read().splitlines()
+lines = open('day07/00.in').read().splitlines()
 
 pwd = ['/']
-files = defaultdict(int)
+files = {}
 for line in lines[1:]:
     if line == '$ cd ..':
         pwd.pop()

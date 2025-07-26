@@ -1,7 +1,7 @@
 cals = 0
 elves = []
 
-for line in open('day01/1.in').read().splitlines():
+for line in open('day01/0.in').read().splitlines():
     if line:
         cals += int(line)
     else:

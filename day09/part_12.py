@@ -28,7 +28,7 @@ def step(knots, direction):
     knots = step(knots, direction)
     curr_knot = move_tail(knots[-1], curr_knot)
     knots.append(curr_knot)
-    return(knots)
+    return knots
 
 
 def solve(lines, knots):

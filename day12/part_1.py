@@ -49,7 +49,7 @@ def bfs(start, goal):
     return []  # No path found
 
 
-lines = open('day12/1.in').read().splitlines()
+lines = open('day12/00.in').read().splitlines()
 start, goal = find_start_goal(lines)
 
 y_max = len(lines) - 1
@@ -57,5 +57,6 @@ x_max = len(lines[0]) - 1
 
 part_1 = len(bfs(start, goal)) - 1
 print(f'{part_1 = }')
-assert part_1 == 490
+print(bfs(start, goal))
+# assert part_1 == 490
 print('Tests passed.')

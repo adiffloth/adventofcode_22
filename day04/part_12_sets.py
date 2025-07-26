@@ -1,7 +1,6 @@
 lines = open('day04/1.in').read().splitlines()
 
-part_1 = 0
-part_2 = 0
+part_1 = part_2 = 0
 for line in lines:
     a, b = [x.split('-') for x in line.split(',')]
     a_set = set(range(int(a[0]), int(a[1]) + 1))

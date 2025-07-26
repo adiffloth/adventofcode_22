@@ -43,7 +43,7 @@ def run(rocks, check_fn):
         sand_units += 1
 
 
-lines = open('day14/1.in').read().splitlines()
+lines = open('AoC_22/day14/1.in').read().splitlines()
 
 part_1 = run(get_rocks(lines), check_part_1)
 print(f'Part 1: {part_1}')

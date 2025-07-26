@@ -1,4 +1,7 @@
+import time
 from collections import namedtuple, defaultdict
+
+start = time.time()
 
 
 def m_dist(a, b):
@@ -16,7 +19,7 @@ for line in lines:
 
     beacons[beacon.y].add(beacon.x)
     d = m_dist(sensor, beacon)
-    y = 2000000
+    y = 2_000_000
     for x in range(sensor.x - d, sensor.x + d + 1):
         current = Point(x, y)
         if (m_dist(current, sensor) <= d) and (x not in beacons[y]):
@@ -27,3 +30,6 @@ part_1 = len(isnts)
 print(f'{part_1 = }')
 assert part_1 == 4502208
 print('Tests passed.')
+
+end = time.time()
+print(f'{(end - start):.2f} seconds elapsed.')
